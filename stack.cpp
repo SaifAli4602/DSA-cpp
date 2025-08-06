@@ -248,3 +248,120 @@
 //     }
 //     return 0;
 // }
+
+
+
+//   check the valid paranthesises
+
+
+
+
+// #include<iostream>
+// #include<string>
+// #include<stack>
+
+// using namespace std;
+
+// bool isvalid(string str){
+//     stack<char>st;
+//     for(int i=0;i<str.size();i++){
+//         if(str[i]=='(' || str[i]=='{'|| str[i]=='['){
+//             st.push(str[i]);
+
+//         }
+//         else{
+//             if(st.size()==0){
+//                 return false;
+//             }
+//             if((st.top()=='('&& str[i]==')')||
+//             (st.top()=='{'&& str[i]=='}')||
+//             (st.top()=='['&& str[i]==']')){
+//                 st.pop();
+//             }
+//             else{ // no matching found
+//                 return false;
+//             }
+//         }
+//     }
+//     return st.size()==0;
+// }
+
+// int main(){
+//     string str="()[]{}";
+//     cout<<isvalid(str);
+// }
+
+
+
+//  Next greater element
+
+  
+
+// #include<iostream>
+// #include<vector>
+// #include<stack>
+
+// using namespace std;
+// int main(){
+//     vector<int>arr={6,8,0,1,3};
+
+//     stack<int >s;
+    
+//     vector<int >ans(arr.size(),0);
+//     for(int i=arr.size()-1;i>=0;i--){
+//         while(s.size()>0 && s.top() <=arr[i]){
+//             s.pop();
+//         }
+//         if(s.empty()){
+//             ans[i] = -1;
+//         }
+//         else{
+//             ans[i]=s.top();
+//         }
+//         s.push(arr[i]);
+//     }
+
+//     for(int val : ans){
+//         cout<<val<<" ";
+//     }
+//     cout<<endl;
+//     return 0;
+// }
+
+ 
+//   previous smallest element
+
+// #include<iostream>
+// #include<vector>
+// #include<stack>
+
+// using namespace std;
+// vector<int>prevSmallestelement(vector<int>arr){
+//     stack<int>s;
+//     vector<int>ans(arr.size(),0);
+//     for(int i=0;i<arr.size();i++){
+//         while(s.size()>0 && s.top()>=arr[i]){
+//             s.pop();
+//         }
+//         if(s.empty()){
+//             ans[i]=-1;
+//         }
+//         else{
+//             ans[i]=s.top();
+//         }
+//         s.push(arr[i]);
+//     }
+//    return ans;
+// }
+// int main(){
+//     vector<int>arr={3,1,0,8,6};
+//     vector<int>ans=prevSmallestelement(arr);
+//       for(int val : ans){ 
+//         cout<<val<<" ";
+//     }
+//     cout<<endl;
+//     return 0;
+
+// }     
+
+ 

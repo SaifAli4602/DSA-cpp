@@ -190,7 +190,9 @@
 //         }
 //       }
 
-//       for(int value:ans){
+//       for(int value:ans)
+    
+//       {
 //         cout<<value<<" ";
 //       }
   

@@ -1,8 +1,8 @@
-//#include<iostream>
-// using namespace std;
+#include<iostream>
+using namespace std;
 
 
-//    PUSH_FRONT IN LINK LIST
+  //  PUSH_FRONT IN LINK LIST
 
 
 
@@ -46,7 +46,7 @@
 
 //         while(temp != NULL){
 //             cout<<temp -> data<<" ";
-//             temp = temp -> next;
+//           temp=temp->next;
 //         }
 //         cout<<endl;
 //     }
@@ -65,6 +65,8 @@
 //     return 0;
    
 // }
+
+
 
 
 //    PUSH_BACK IN LINK LIST
@@ -288,7 +290,7 @@
 
 
 
-//  medel element
+//  insert element or meddle element
 
 // #include<iostream>
 // using namespace std;
@@ -369,90 +371,173 @@
  
 
 
+//   search key
+
+
+// #include<iostream>
+// using namespace std;
+// class node{
+//     public:
+//     int data ;
+//     node* next;
+
+//     node(int val){
+//         data=val;
+//        next=NULL;
+//     }
+
+// };
+// class list{
+//     node*head;
+//     node*tail;
+
+//     public:
+//     list(){
+//         head=tail=NULL;
+//     }
+//   void push_back(int val){
+//     node* newnode=new node(val);
+  
+//   if(head ==NULL){
+//     head =tail=newnode;
+     
+//     return ;
+//    }
+//    else{
+//     tail ->next=newnode;
+//     tail=newnode;
+//    }
+// }
+
+//    void print(){
+//     node* temp=head;
+//      temp = head;
+
+//             while(temp != NULL){
+//                 cout<<temp -> data<<" ";
+//                 temp = temp -> next;
+//             }
+//             cout<<endl;
+
+//    }
+
+//    int search (int key){
+//      node*temp=head;
+//      int idx=0;
+
+//      while(temp != NULL){
+//       if(temp ->data==key){
+//         return idx;
+//       }
+//       temp=temp->next;
+//       idx++;
+//      }
+//      return -1;
+
+//    }
+
+// };
+// int main(){
+//     list ll;
+
+//     ll.push_back(1);
+//     ll.push_back(12);
+//     ll.push_back(1);
+//     ll.push_back(5);
+//  ll.print();
+
+//  cout<<ll.search (12);
+   
+//         return 0;
+// }
+
+
+
 
 // revrse of linklist milana hai
 
-#include<iostream>
-using namespace std;
-class node{
-    public:
-    int data ;
-    node* next;
 
-    node(int val){
-        data=val;
-       next=NULL;
-    }
+// #include<iostream>
+// using namespace std;
+// class node{ 
+//     public:
+//     int data ;
+//     node* next;
 
-};
-class list{
-    node*head;
-    node*tail;
+//     node(int val){
+//         data=val;
+//        next=NULL;
+//     }
 
-    public:
-    list(){
-        head=tail=NULL;
-    }
-  void push_back(int val){
-    node* newnode=new node(val);
+// };
+// class list{
+//     node*head;
+//     node*tail;
+
+//     public:
+//     list(){
+//         head=tail=NULL;
+//     }
+//   void push_back(int val){
+//     node* newnode=new node(val);
   
-  if(head ==NULL){
-    head =tail=newnode;
+//   if(head ==NULL){
+//     head =tail=newnode;
      
-    return ;
-   }
-   else{
-    tail ->next=newnode;
-    tail=newnode;
-   }
-}
+//     return ;
+//    }
+//    else{
+//     tail ->next=newnode;
+//     tail=newnode;
+//    }
+// }
 
-void reversell(node* head){
-  node* prev = NULL;
-   node* curr = head;
-    node* next = NULL;
+// void reversell(node* head){
+//   node* prev = NULL;
+//    node* curr = head;
+//     node* next = NULL;
 
-    while(curr != NULL){
-        next = curr->next;
-        curr->next= prev;
+//     while(curr != NULL){
+//         next = curr->next;
+//         curr->next= prev;
 
-        prev = curr;
-        curr = next;
+//         prev = curr;
+//         curr = next;
 
-    }
+//     }
    
-    return prev;
-  }
+//     return prev;
+//   }
 
 
 
 
    
-   void print(){
-    node* temp=head;
-     temp = head;
+//    void print(){
+//     node* temp=head;
+//      temp = head;
 
-            while(temp != NULL){
-                cout<<temp -> data<<" -> ";
-                temp = temp -> next;
-            }
-            cout<<endl;
+//             while(temp != NULL){
+//                 cout<<temp -> data<<" -> ";
+//                 temp = temp -> next;
+//             }
+//             cout<<endl;
 
-   }
+//    }
 
-};
-int main(){
-    list ll;
+// };
+// int main(){
+//     list ll;
 
-    ll.push_back(1);
-    ll.push_back(12);
-    ll.push_back(1);
-    ll.push_back(5);
-    ll.print();
+//     ll.push_back(1);
+//     ll.push_back(12);
+//     ll.push_back(1);
+//     ll.push_back(5);
+//     ll.print();
    
-      return 0;
+//       return 0;
   
-    }
+//     }
 
 
 
@@ -502,7 +587,7 @@ int main(){
 //         slow = slow->next;
 //         fast = fast->next->next;
 //     }
-//   return slow;
+//   cout<<slow;
 
 // }
 
